@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/screen/HomeScreen.dart';
 import 'package:learnflutter/screen/UserPermission.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
      // home: const UserPermission(),
-      home: const UserPermission(),
+      home: const HomeScreen(),
     );
   }
 }
