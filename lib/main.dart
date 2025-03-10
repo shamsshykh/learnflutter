@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
-import 'package:learnflutter/screen/UserPermission.dart';
 
 void main() {
   runApp(const MyApp());
