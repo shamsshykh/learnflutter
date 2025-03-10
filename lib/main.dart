@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
+import 'package:learnflutter/screen/ImagesScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-     // home: const UserPermission(),
-      home: const HomeScreen(),
+      // home: const UserPermission(),
+      // home: const HomeScreen(),
+      home: const ImagesScreen(),
     );
   }
 }
-
