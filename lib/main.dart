@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/screen/FlexBoxPattern.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
 import 'package:learnflutter/screen/ImagesScreen.dart';
 
@@ -16,11 +17,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Learn Flutter',
       theme: ThemeData(
+        useMaterial3: false,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      // home: const UserPermission(),
-      // home: const HomeScreen(),
-      home: const ImagesScreen(),
+      //  home: const UserPermission(),
+      //  home: const HomeScreen(),
+      // home: const ImagesScreen(),
+      home: FlexBoxPattern(),
     );
   }
 }
