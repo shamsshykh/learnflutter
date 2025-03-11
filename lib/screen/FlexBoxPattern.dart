@@ -98,6 +98,7 @@ class MessageTypingView extends StatelessWidget {
           Expanded(
             child: TextField(
               decoration: InputDecoration(
+                hintText: "Type your message",
                 border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
               ),
             ),
