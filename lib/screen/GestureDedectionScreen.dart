@@ -13,7 +13,7 @@ class GestureDedectionScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             GestureDetector(
-              child: Text("Click me"),
+              child: Text("Click me by GestureDetector"),
               onTap: (){
                 Fluttertoast.showToast(msg: "Click Text");
               }
@@ -21,7 +21,7 @@ class GestureDedectionScreen extends StatelessWidget {
             SizedBox(height: 100),
             InkWell( // give in an animation white tapping
               onLongPress: (){
-                Fluttertoast.showToast(msg: "Long Press");
+                Fluttertoast.showToast(msg: "Long Press by InkWell");
               },
               child: Text("Long Press"),
             ),
