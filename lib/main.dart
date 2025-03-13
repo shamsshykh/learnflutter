@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/screen/FlexBoxPattern.dart';
+import 'package:learnflutter/screen/GestureDedectionScreen.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
 import 'package:learnflutter/screen/ImagesScreen.dart';
 import 'package:learnflutter/screen/StatefulWidgetScreen.dart';
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       //  home: const HomeScreen(),
       // home: const ImagesScreen(),
       // home: FlexBoxPattern(),
-      home: StatefulWidgetScreen(),
+      // home: StatefulWidgetScreen(),
+      home: GestureDedectionScreen(),
     );
   }
 }
