@@ -12,7 +12,12 @@ class FlexBoxPattern extends StatelessWidget {
         actions: [Icon(Icons.logout)],
       ),
       body: Column(
-        children: [Expanded(child: ScrollView()), MessageTypingView()],
+        children: [
+          Expanded(
+            child: ScrollView()
+          ),
+          MessageTypingView()
+        ],
       ),
     );
   }
