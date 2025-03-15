@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/screen/CustomFontUsagesScreen.dart';
 import 'package:learnflutter/screen/FlexBoxPattern.dart';
 import 'package:learnflutter/screen/GestureDedectionScreen.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
@@ -29,7 +30,8 @@ class MyApp extends StatelessWidget {
       // home: FlexBoxPattern(),
       // home: StatefulWidgetScreen(),
       // home: GestureDedectionScreen(),
-      home: ListViewWidget(),
+      // home: ListViewWidget(),
+      home: CustomFontSagesScreen(),
     );
   }
 }
