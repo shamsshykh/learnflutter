@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/screen/BottomNavigationScreen.dart';
 import 'package:learnflutter/screen/CustomFontUsagesScreen.dart';
 import 'package:learnflutter/screen/FlexBoxPattern.dart';
 import 'package:learnflutter/screen/GestureDedectionScreen.dart';
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
       // home: StatefulWidgetScreen(),
       // home: GestureDedectionScreen(),
       // home: ListViewWidget(),
-      home: CustomFontSagesScreen(),
+      //home: CustomFontSagesScreen(),
+      home: BottomNavigationScreen(),
     );
   }
 }
