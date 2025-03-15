@@ -49,7 +49,7 @@ class DynamicListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemBuilder: (context, index) {
-        return Padding(padding: const EdgeInsets.all(8.0), child: Text("data"));
+        return Padding(padding: const EdgeInsets.all(5.0), child: Text("data"));
       },
       itemCount: 100,
       scrollDirection: Axis.horizontal,
@@ -63,10 +63,11 @@ class DynamicListViewWithDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      itemBuilder: (context, index) {
-        return Padding(padding: const EdgeInsets.all(8.0), child: Text("data"));
+      itemBuilder: (context, currentIndex) {
+       // return ListItem();
+        return ListItemWithListTile(currentIndex);
       },
-      itemCount: 30,
+      itemCount: 10,
       scrollDirection: Axis.vertical,
       separatorBuilder: (context, index) {
         return Divider(thickness: 2);
@@ -74,3 +75,29 @@ class DynamicListViewWithDivider extends StatelessWidget {
     );
   }
 }
+
+class ListItem extends StatelessWidget {
+  const ListItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Padding(padding: EdgeInsets.all(8.0), child: Text("data"));
+  }
+}
+
+class ListItemWithListTile extends StatelessWidget {
+  const ListItemWithListTile(this.index, {super.key});
+
+  final int index;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(Icons.ac_unit),
+      title: Text("Data $index"),
+      subtitle: Text("Subtitle"),
+      trailing: Icon(Icons.add),
+    );
+  }
+}
+
