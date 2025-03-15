@@ -93,7 +93,9 @@ class ListItemWithListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(Icons.ac_unit),
+      leading: CircleAvatar(
+        child: Icon(Icons.ac_unit),
+      ),
       title: Text("Data $index"),
       subtitle: Text("Subtitle"),
       trailing: Icon(Icons.add),
