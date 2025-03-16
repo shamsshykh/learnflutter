@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnflutter/core/theme/color_schemes.dart';
 import 'package:learnflutter/screen/BottomNavigationScreen.dart';
 import 'package:learnflutter/screen/CustomFontUsagesScreen.dart';
 import 'package:learnflutter/screen/FlexBoxPattern.dart';
@@ -23,7 +24,11 @@ class MyApp extends StatelessWidget {
       title: 'Learn Flutter',
       theme: ThemeData(
         useMaterial3: false,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: colorSchemeLight,
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: false,
+        colorScheme: colorSchemeDark,
       ),
       //  home: const UserPermission(),
       //  home: const HomeScreen(),

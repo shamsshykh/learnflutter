@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:learnflutter/core/theme/color_schemes.dart';
 
 class BottomNavigationScreen extends StatefulWidget {
   const BottomNavigationScreen({super.key});
@@ -17,7 +18,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bottom Navigation")),
+      appBar: AppBar(title: Text("Bottom Navigation", style: textHeading)),
       body: Container(
         child: pages[_currentIndex],
       ),
