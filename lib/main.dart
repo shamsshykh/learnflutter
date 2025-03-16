@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learnflutter/core/theme/color_schemes.dart';
 import 'package:learnflutter/screen/BottomNavigationScreen.dart';
+import 'package:learnflutter/screen/CardViewWidget.dart';
 import 'package:learnflutter/screen/CustomFontUsagesScreen.dart';
 import 'package:learnflutter/screen/FlexBoxPattern.dart';
 import 'package:learnflutter/screen/GestureDedectionScreen.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
         colorScheme: colorSchemeDark,
       ),
+      themeMode: ThemeMode.light,
       //  home: const UserPermission(),
       //  home: const HomeScreen(),
       // home: const ImagesScreen(),
@@ -38,7 +40,8 @@ class MyApp extends StatelessWidget {
       // home: GestureDedectionScreen(),
       // home: ListViewWidget(),
       //home: CustomFontSagesScreen(),
-      home: BottomNavigationScreen(),
+      //home: BottomNavigationScreen(),
+      home: CardViewWidget(),
     );
   }
 }
