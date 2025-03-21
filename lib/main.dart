@@ -7,6 +7,7 @@ import 'package:learnflutter/screen/FlexBoxPattern.dart';
 import 'package:learnflutter/screen/GestureDedectionScreen.dart';
 import 'package:learnflutter/screen/HomeScreen.dart';
 import 'package:learnflutter/screen/ImagesScreen.dart';
+import 'package:learnflutter/screen/InputFiledWIthValidation.dart';
 import 'package:learnflutter/screen/ListViewWidget.dart';
 import 'package:learnflutter/screen/StatefulWidgetScreen.dart';
 
@@ -41,7 +42,8 @@ class MyApp extends StatelessWidget {
       // home: ListViewWidget(),
       //home: CustomFontSagesScreen(),
       //home: BottomNavigationScreen(),
-      home: CardViewWidget(),
+      // home: CardViewWidget(),
+      home: InputFiledWithValidation(),
     );
   }
 }
