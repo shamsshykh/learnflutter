@@ -77,7 +77,8 @@ class InputFiledWithValidation extends StatelessWidget {
                     ),
                   ),
                 );
-              } else if (state is LoginLoadingState) {
+              }
+              else if (state is LoginLoadingState) {
                 return CircularProgressIndicator();
               } else if (state is LoginSuccessState) {
                 return Center(child: Text("Login User"));

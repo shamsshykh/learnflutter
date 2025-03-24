@@ -4,7 +4,7 @@
 
 
 // event : action that triggered on UI
-// block : received the events , processed them and return the state
+// bloc : received the events , processed them and return the state
 // state : refer to the current state of the app
 
 
@@ -21,7 +21,7 @@
 
 // read and watch => read same as provider and watch same as listener
 
-// block selector
+// bloc selector
 // listen the specific state changes not the whole state
 // listen the subset of state
 // on every state change the whole ui won't change , performance optimization
@@ -46,6 +46,7 @@ class UsageOfBlockDesignPattern extends StatelessWidget {
         BlocProvider(
           create: (context) => LoginBloc(),
         ),
+
       ],
       child: MaterialApp(
         home: InputFiledWithValidation(),
